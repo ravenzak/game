@@ -1,0 +1,17 @@
+body
+{
+    background: #333;
+}
+
+#gameName
+{
+    color: #fff;
+    
+}
+
+#map
+{
+    display: block;
+    margin: 70px auto 0px;
+    background: #fff;
+}
