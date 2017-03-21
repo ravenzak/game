@@ -3,22 +3,23 @@ window.onload = init;
 var map;
 var ctxMap;
 
-var drawButton;
-var clearButton;
+var drawButn;
+var clearButn;
 
 function init()
 {
     map = document.getElementById("map");
     ctxMap = map.getContext("2d");
-    drawButton = document.getElementById("drawButton");
-    clearButton = document.getElementById("clearButton");
 
-    drawButton.addEventlistener("click", drawRect, false);
-    clearButton.addEventlistener("click", clearRect, false);
+    drawButn = document.getElementById("drawButn");
+    clearButn = document.getElementById("clearButn");
+
+    drawButn.addEventlistener("click", drawRect, false);
+    clearButn.addEventlistener("click", clearRect, false);
 }
 function drawRect()
 {
-ctxMap.fillStyle = "#3D3D3D";
+ctxMap.fillStyle = "#333";
 ctxMap.fillRect(10, 10, 100, 100);
 }
 function clearRect()
